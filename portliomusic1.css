@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Caladea", serif;
+	background:url(bg.jpg)no-repeat;
+	background-size:cover;
+
+
+	
+}
+.banner{
+   width: 100%;
+   height: 100px;
+   position: relative;
+
+
+}
+.nav{
+    width: 1100px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+.nav .logo{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;   
+}
+
+.nav .textbox {
+width: 45%;
+}
+.nav .textbox ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .textbox ul li{
+    list-style: none;
+}
+
+.nav .textbox ul li a{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav .textbox .active{
+    color: red;
+}
+.banner-clip-path{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0,25% 0,50% 100%, 0 100%);
+    background-image: url(hnk.jpg);
+    background-size: cover;
+    z-index: 2;
+
+}
+.baner{
+    position: absolute;
+    width: 600px;
+
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.baner img{
+    width: 100%;
+    size: 500px;
+    filter: drop-shadow(-140px -140px 5px rgba(0,0,0,0.5));
+    transition: 0.5s;
+}
+.baner img{
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+.text{
+    position: absolute;
+    width: 600px;
+    top: 25%;
+    left: 86%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.text1{
+    position: absolute;
+    width: 600px;
+    top: 30%;
+    left: 93.5%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color:red;
+    text-decoration: none;}
